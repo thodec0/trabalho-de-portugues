@@ -18,7 +18,7 @@ function preload(){
 pload=loadImage('cara da lança.png');
 dload=loadImage('dragao.png');
 lload=loadImage('spear2.png')
-aload=loadImage('a.jpg');
+aload=loadImage('i.jpg');
 fload=loadImage('fogo.jpg');
 }
 
@@ -46,6 +46,7 @@ l.addImage(lload);
 
 function draw() {
  background('white');
+ textSize(20);
  drawSprites();
 
  if(keyDown('s')){
@@ -80,11 +81,11 @@ ganhar()
 }
 function ganhar(){
 if (vd==0){
-text('Parabéns! Você descobriu a escrita',800,100,);
+text('PARABÉNS! VOCÊ DESCOBRIU A ESCRITA.',800,100,);
 
 a=createSprite(800,400,800,400);
 a.addImage(aload);
-a.scale=4.6;
+a.scale=5;
 }
 
 }
